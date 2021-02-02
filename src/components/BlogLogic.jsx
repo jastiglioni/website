@@ -79,40 +79,28 @@ const BlogLogic = () => {
         }}
       >
         <form onSubmit={addBlog}>
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-            }}
-          >
+          <div>
             <label> Blog Title: </label>
-            <input value={title} onChange={handleTitleChange} size="50" />
+            <input value={title} onChange={handleTitleChange} />
             <label> Author Name: </label>
-            <input value={author} onChange={handleAuthorChange} size="50" />
+            <input value={author} onChange={handleAuthorChange} />
           </div>
+
           <br />
+
           <label>Write a Blog!</label>
-          <br />
-          <br />
           <textarea
             value={body}
             onChange={handleBodyChange}
             rows="2"
             placeholder="What's on your mind?"
-            style={{
-              width: '100%',
-            }}
           />
           <br />
           <br />
           <button
             type="submit"
-            style={{
-              float: 'right',
-            }}
           >
             Submit
-
           </button>
         </form>
       </div>

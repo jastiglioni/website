@@ -3,20 +3,21 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-  // NavLink,
   BrowserRouter as Router,
   Switch, Route,
 } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
-import Projects from './Projects';
+import Projects from './components/Projects';
 import BlogLogic from './components/BlogLogic';
+import Header from './components/Header';
 
 const App = () => (
   <div>
     <div className="App">
-      <Router>
 
+      <Router>
+        <Header />
         <Navbar bg="dark" variant="dark">
           <Nav className="mr-auto">
             <Navbar.Brand href="/home">Jacob Castiglioni</Navbar.Brand>

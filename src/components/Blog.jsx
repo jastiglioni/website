@@ -1,31 +1,21 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-
+import '../styles/Blog.css';
 // eslint-disable-next-line react/prop-types
 const Blog = ({ article, func }) => (
 
-  <div
-    style={{
-      margin: '0 auto',
-      maxWidth: 960,
-      padding: '1.45rem 1.0875rem',
-    }}
-  >
+  <div className="main">
     <article>
 
       <h2>{article.title}</h2>
       <h6>{article.author}</h6>
 
-      <p style={{
-        textAlign: 'justify',
-      }}
-      >
+      <p>
         {article.body}
-
       </p>
     </article>
 
-    <button type="button" onClick={func} style={{ float: 'right' }}>
+    <button type="button" onClick={func}>
       Like
       {' '}
       <span role="img" aria-label="heart">❤️</span>
