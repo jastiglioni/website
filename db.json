@@ -1,0 +1,26 @@
+{
+  "article": [
+    {
+      "title": "This is the first title",
+      "author": "Jacob Castiglioni",
+      "body": "This is a test"
+    },
+    {
+      "title": "This is the first title",
+      "author": "Jacob Castiglioni",
+      "body": "This is a test"
+    },
+    {
+      "title": "This is the first title",
+      "author": "Jacob Castiglioni",
+      "body": "This is a test"
+    },
+    {
+      "id": 4,
+      "title": "this ",
+      "author": "is ",
+      "body": "a test",
+      "likes": 0
+    }
+  ]
+}

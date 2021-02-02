@@ -7,9 +7,10 @@ import {
   BrowserRouter as Router,
   Switch, Route,
 } from 'react-router-dom';
-import About from './About';
-import Home from './Home';
+import About from './components/About';
+import Home from './components/Home';
 import Projects from './Projects';
+import BlogLogic from './components/BlogLogic';
 
 const App = () => (
   <div>
@@ -31,6 +32,9 @@ const App = () => (
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/blog">
+            <BlogLogic />
           </Route>
           <Route path="/projects">
             <Projects />
