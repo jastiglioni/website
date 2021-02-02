@@ -9,20 +9,20 @@ import {
 } from 'react-router-dom';
 import About from './About';
 import Home from './Home';
+import Projects from './Projects';
 
 const App = () => (
   <div>
     <div className="App">
       <Router>
+
         <Navbar bg="dark" variant="dark">
-
           <Nav className="mr-auto">
-            <Nav.Link to="/home" href="home">Home</Nav.Link>
-            <Nav.Link to="/about" href="about">About</Nav.Link>
-            <Nav.Link href="#features">Blog</Nav.Link>
-            <Nav.Link href="#pricing">Projects</Nav.Link>
+            <Navbar.Brand href="/home">Jacob Castiglioni</Navbar.Brand>
+            <Nav.Link href="/about">About</Nav.Link>
+            <Nav.Link href="/blog">Blog</Nav.Link>
+            <Nav.Link href="/projects">Projects</Nav.Link>
           </Nav>
-
         </Navbar>
 
         <Switch>
@@ -32,10 +32,12 @@ const App = () => (
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
         </Switch>
 
       </Router>
-
     </div>
 
   </div>
