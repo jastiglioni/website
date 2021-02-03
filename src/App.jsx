@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
@@ -18,14 +18,6 @@ const App = () => (
 
       <Router>
         <Header />
-        <Navbar bg="dark" variant="dark">
-          <Nav className="mr-auto">
-            <Navbar.Brand href="/home">Jacob Castiglioni</Navbar.Brand>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/blog">Blog</Nav.Link>
-            <Nav.Link href="/projects">Projects</Nav.Link>
-          </Nav>
-        </Navbar>
 
         <Switch>
           <Route path="/home">
