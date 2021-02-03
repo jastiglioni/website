@@ -6,6 +6,7 @@ import logo from '../static/ll.png';
 
 const padding = {
   padding: 5,
+  color: 'black',
 };
 const Header = () => (
 
