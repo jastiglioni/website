@@ -1,12 +1,12 @@
 import React from 'react';
-import pic from './ll.png';
+import pic from '../static/ll.png';
+import '../styles/General.css';
 
 export default function Projects() {
   return (
-    <div>
+    <div className="main">
       <img
         src={pic}
-        className="d-inline-block align-top"
         alt="React Bootstrap logo"
       />
     </div>

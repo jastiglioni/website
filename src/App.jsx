@@ -1,44 +1,30 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import Nav from 'react-bootstrap/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {
-  // NavLink,
   BrowserRouter as Router,
   Switch, Route,
 } from 'react-router-dom';
 import About from './components/About';
 import Home from './components/Home';
-import Projects from './Projects';
-import BlogLogic from './components/BlogLogic';
+import Projects from './components/Projects';
+import Blog from './components/Blog';
+import Header from './components/Header';
 
 const App = () => (
   <div>
-    <div className="App">
-      <Router>
+    <div>
 
-        <Navbar bg="dark" variant="dark">
-          <Nav className="mr-auto">
-            <Navbar.Brand href="/home">Jacob Castiglioni</Navbar.Brand>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/blog">Blog</Nav.Link>
-            <Nav.Link href="/projects">Projects</Nav.Link>
-          </Nav>
-        </Navbar>
+      <Router>
+        <Header />
 
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/blog">
-            <BlogLogic />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/projects" component={Projects} />
         </Switch>
 
       </Router>

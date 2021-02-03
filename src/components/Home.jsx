@@ -1,9 +1,12 @@
 import React from 'react';
+import '../styles/General.css';
 
 const Home = () => (
-  <div>
-    <h3>I am making a website, blog, and studying finance. Have desire to go into finance?</h3>
-    <p>Here is the very foundation of Castiglion  Co !!</p>
+  <div className="main">
+    <h1>Welcome to my corner of the Internet!</h1>
+    <p className="special">
+      This is where I post my blogs, projects, or anything else I find interesting.
+    </p>
   </div>
 );
 

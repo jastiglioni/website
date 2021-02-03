@@ -1,0 +1,30 @@
+.main {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
+    font-size: 30px;
+}
+.article {
+    text-align: justify;
+    float: right;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    float: right;
+    font-size: 15px;
+}
+
+
+
+h2, h6, label {
+    padding: 0%;
+    font-weight: bold;
+}
+
+p {
+    font-size: 20px;
+}
