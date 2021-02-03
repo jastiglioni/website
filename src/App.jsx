@@ -14,7 +14,7 @@ import Header from './components/Header';
 
 const App = () => (
   <div>
-    <div className="App">
+    <div>
 
       <Router>
         <Header />

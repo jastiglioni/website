@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Blog from './Blog';
 import blogService from '../services/blogService';
+import '../styles/About.css';
 
 const BlogLogic = () => {
   const [title, setTitle] = useState('');
@@ -72,11 +73,8 @@ const BlogLogic = () => {
     <div>
 
       <div
-        style={{
-          margin: '0 auto',
-          maxWidth: 960,
-          padding: '1.45rem 1.0875rem',
-        }}
+        className="main"
+        style={{ fontSize: '15px' }}
       >
         <form onSubmit={addBlog}>
           <div>
