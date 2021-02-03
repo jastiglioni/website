@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link } from 'react-router-dom';
-import '../styles/About.css';
+import '../styles/General.css';
 
 const padding = {
   padding: 5,

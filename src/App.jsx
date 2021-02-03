@@ -9,7 +9,7 @@ import {
 import About from './components/About';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import BlogLogic from './components/BlogLogic';
+import BlogLogic from './components/Blog';
 import Header from './components/Header';
 
 const App = () => (

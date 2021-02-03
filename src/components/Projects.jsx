@@ -1,6 +1,6 @@
 import React from 'react';
 import pic from '../static/ll.png';
-import '../styles/About.css';
+import '../styles/General.css';
 
 export default function Projects() {
   return (
