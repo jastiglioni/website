@@ -9,7 +9,7 @@ const padding = {
 const Header = () => (
 
   <div className="main">
-    <Link to="/home">home</Link>
+    <Link to="/">home</Link>
     <Link style={padding} to="/about">about</Link>
     <Link style={padding} to="/blog">blog</Link>
     <Link style={padding} to="/projects">projects</Link>

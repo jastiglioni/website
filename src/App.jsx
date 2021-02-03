@@ -9,7 +9,7 @@ import {
 import About from './components/About';
 import Home from './components/Home';
 import Projects from './components/Projects';
-import BlogLogic from './components/Blog';
+import Blog from './components/Blog';
 import Header from './components/Header';
 
 const App = () => (
@@ -20,18 +20,11 @@ const App = () => (
         <Header />
 
         <Switch>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/blog">
-            <BlogLogic />
-          </Route>
-          <Route path="/projects">
-            <Projects />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/projects" component={Projects} />
         </Switch>
 
       </Router>
