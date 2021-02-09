@@ -5,13 +5,14 @@ const About = () => (
   <div className="main">
     <article>
 
-      <h2>who am i?</h2>
+      <h2>Who am I?</h2>
       {/* <h6>Thi</h6> */}
 
       <p>
-        TI am an analyst in the Martime industry. In my freetime I enjoy skating, yoga, and
-        programming. I am also not an avid gamer but am an amature investor. I recently tried
-        skiing last weekend, it was cool.
+        I currently work as analyst in the Martime industry. When I find some time
+        to myself during the work week I am usually studying finance and investing. In
+        my freetime I enjoy skating, yoga, and building fun programming projects. I believe
+        learning is a life-long endeavor and am always reading about something.
       </p>
     </article>
   </div>
