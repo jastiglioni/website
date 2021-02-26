@@ -11,6 +11,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Blog from './components/Blog';
 import Header from './components/Header';
+import Learn from './components/Learn';
 
 const App = () => (
   <div>
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/home" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/blog" component={Blog} />
+          <Route path="/learn" component={Learn} />
           <Route path="/projects" component={Projects} />
         </Switch>
 
